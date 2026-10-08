@@ -1,0 +1,21 @@
+{
+  "name": "legal-matter-export-link",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "tsx src/setup_bucket.ts",
+    "dev": "tsx src/server.ts",
+    "example": "tsx src/run_example.ts",
+    "test": "tsx --test src/matter_export.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
